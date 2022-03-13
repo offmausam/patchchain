@@ -3,10 +3,12 @@ import PropTypes from "prop-types";
 
 import { Container, Button, Badge } from "react-bootstrap";
 import "./Banner.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
-import { faFacebook, faGithub, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import envelopIcon from "../../content/assets/images/icons/envelope-solid.png";
+import facebookIcon from "../../content/assets/images/icons/facebook-brands.png";
+import githubIcon from "../../content/assets/images/icons/github-brands.png";
+import instagramIcon from "../../content/assets/images/icons/instagram-brands.png";
+import twitterIcon from "../../content/assets/images/icons/twitter-brands.png";
 
 const Banner = ({ header, subheader }) => {
   return (
@@ -50,27 +52,27 @@ const Banner = ({ header, subheader }) => {
           <ul className="list-unstyled">
             <li>
               <Link to="">
-                <FontAwesomeIcon icon={faTwitter} size="2x" color="white" />
+                <img src={twitterIcon} className="social-icon img-fluid" alt="Twitter" />
               </Link>
             </li>
             <li>
               <Link to="">
-                <FontAwesomeIcon icon={faInstagram} size="2x" color="white" />
+                <img src={instagramIcon} className="social-icon img-fluid" alt="Instagram" />
               </Link>
             </li>
             <li>
               <Link to="">
-                <FontAwesomeIcon icon={faGithub} size="2x" color="white" />
+                <img src={githubIcon} className="social-icon img-fluid" alt="Github" />
               </Link>
             </li>
             <li>
               <Link to="">
-                <FontAwesomeIcon icon={faEnvelope} size="2x" color="white" />
+                <img src={envelopIcon} className="social-icon img-fluid" alt="Envelop" />
               </Link>
             </li>
             <li>
               <Link to="">
-                <FontAwesomeIcon icon={faFacebook} size="2x" color="white" />
+                <img src={facebookIcon} className="social-icon img-fluid" alt="Facebook" />
               </Link>
             </li>
           </ul>

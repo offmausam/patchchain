@@ -1,5 +1,9 @@
-// .list-custom {
-//   svg {
-//     width: 1em !important;
-//   }
-// }
+.list-custom {
+  li {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 1em !important;
+  }
+}

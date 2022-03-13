@@ -1,10 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Button } from "react-bootstrap";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import Banner from "components/Banner";
-import { render } from "react-dom";
 
 const Top = ({ frontmatter }) => {
   if (!frontmatter) {

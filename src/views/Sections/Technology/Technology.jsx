@@ -6,8 +6,8 @@ import Image from "components/Image";
 
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+
+import longArrow from "../../../../content/assets/images/icons/long-arrow-alt-right-solid.png";
 
 import "./Technology.scss";
 
@@ -33,16 +33,15 @@ const Technology = ({ className, frontmatter }) => {
           <Col md={12}>
             <ul className="list-unstyled list-custom text-white text-left">
               <li>
-                <FontAwesomeIcon icon={faLongArrowAltRight} className="mr-2" /> Deflationary
-                LaunchPad
+                <img src={longArrow} className="img-fluid mr-2" alt="" /> Deflationary LaunchPad
               </li>
               <li>
-                <FontAwesomeIcon icon={faLongArrowAltRight} className="mr-2" /> Incubation of
-                Microcaps & FairLaunchs
+                <img src={longArrow} className="img-fluid mr-2" alt="" /> Incubation of Microcaps &
+                FairLaunchs
               </li>
               <li>
-                <FontAwesomeIcon icon={faLongArrowAltRight} className="mr-2" /> Benefit to holders
-                inform of fee re-distribution & Burn
+                <img src={longArrow} className="img-fluid mr-2" alt="" /> Benefit to holders inform
+                of fee re-distribution & Burn
               </li>
             </ul>
             <a href="" className="mt-4 px-5 py-3 text-white mr-3 btn btn-primary">

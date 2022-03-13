@@ -92,7 +92,7 @@
       float: left;
       bottom: 40%;
       @media screen and (max-width: $break-small) {
-        right: 15px;
+        right: 25px;
         top: 15px;
       }
       ul {
@@ -111,8 +111,11 @@
           margin-bottom: 20px;
         }
       }
-      .social-icons {
-        width: 50px !important;
+      .social-icon {
+        width: 34px;
+        @media screen and (max-width: $break-small) {
+          width: 24px;
+        }
       }
     }
   }
