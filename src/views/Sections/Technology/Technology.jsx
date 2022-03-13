@@ -9,6 +9,8 @@ import PageSection from "components/PageSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
+import "./Technology.scss";
+
 const Technology = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
