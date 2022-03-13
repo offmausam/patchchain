@@ -12,6 +12,7 @@ import NavItem from "components/NavItem";
 import Image from "components/Image";
 import subIconOne from "../../../content/assets/images/icon1.png";
 import subIconTwo from "../../../content/assets/images/icon2.png";
+import barIcon from "../../../content/assets/images/icons/bars-solid.png";
 
 import "./Navbar.scss";
 
@@ -47,7 +48,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
           {menuText}
-          <Icon iconName="BarsIcon" />
+          <img src={barIcon} alt="" height={20} />
         </Navbar.Toggle>
         <Navbar.Collapse>
           <Nav className="text-capitalize ml-auto">

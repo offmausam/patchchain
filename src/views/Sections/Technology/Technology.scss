@@ -1,9 +1,10 @@
 .list-custom {
   li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   img {
     width: 1em !important;
+    margin-top: 4px;
   }
 }
