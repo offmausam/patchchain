@@ -1,11 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import {
-  Container,
-  Button,
-  Badge,
-} from "react-bootstrap";
+import { Container, Button, Badge } from "react-bootstrap";
 import "./Banner.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
