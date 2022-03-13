@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import clsx from "clsx";
 
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Badge } from "react-bootstrap";
 
 import useWindowOnScroll from "hooks/useWindowOnScroll";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
@@ -12,6 +12,11 @@ import NavItem from "components/NavItem";
 import Image from "components/Image";
 
 import "./Navbar.scss";
+
+const subLinkImg = [
+  "https://upload.wikimedia.org/wikipedia/commons/e/e7/Mozilla_Firefox_3.5_logo_256.png",
+  "https://clockify.me/assets/images/clockify-logo.png",
+];
 
 const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
   const { brand, menuText, imageFileName } = frontmatter;
@@ -48,12 +53,40 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
           <Icon iconName="BarsIcon" />
         </Navbar.Toggle>
         <Navbar.Collapse>
+          {/* <Nav className="text-capitalize ml-auto">
+            {anchors.map((anchor) => (
+              <NavItem key={anchor} to={anchor} onClick={closeMenu} />
+            ))}
+          </Nav> */}
           <Nav className="text-capitalize ml-auto">
+            <NavDropdown title="Apps" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#href" className="mb-2">
+                <div className="d-flex align-items-center sub-nav-item">
+                  <img className="img-fluid mr-3" src={subLinkImg[0]} alt={brand} />
+                  <div className="content">
+                    <strong>PatchChain</strong> <Badge className="info">Beta</Badge>
+                    <p className="m-0 p-0">Vulnerability Coordination & Bug Bounty Platform</p>
+                  </div>
+                </div>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#href">
+                <div className="d-flex align-items-center sub-nav-item">
+                  <img className="img-fluid mr-3" src={subLinkImg[1]} alt={brand} />
+                  <div className="content">
+                    <strong>Unchain.cash</strong>{" "}
+                    <Badge className="success">Under Development</Badge>
+                    <p className="m-0 p-0">
+                      Multichain Decentralized Protocol for Private Transaction
+                    </p>
+                  </div>
+                </div>
+              </NavDropdown.Item>
+            </NavDropdown>
             {anchors.map((anchor) => (
               <NavItem key={anchor} to={anchor} onClick={closeMenu} />
             ))}
           </Nav>
-          {extraItems}
+          {/* {extraItems} */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
